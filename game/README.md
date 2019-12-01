@@ -9,14 +9,14 @@ series of libraries have been found to assist you in creating your game.
 ## Requirements
 The game should meet the following minimum criteria:
 
-    1. Dynamically render graphical elements that move and change -- including one
-       original algorithmically rendered graphical element.
-    2. Handle colisions properly with other shapes and area boundaries
-    3. Produce sounds triggered by game events -- in a manner that does not cause the
-       game to pause.
-    4. Communicate with the player using text.
-    5. Include a state machine written in assembly language.
-    6. Respond to user input (from buttons).
+  1. Dynamically render graphical elements that move and change -- including one
+     original algorithmically rendered graphical element.
+  2. Handle colisions properly with other shapes and area boundaries
+  3. Produce sounds triggered by game events -- in a manner that does not cause the
+     game to pause.
+  4. Communicate with the player using text.
+  5. Include a state machine written in assembly language.
+  6. Respond to user input (from buttons).
 
 ## Game Description
 The main idea of this game is to avoid all the moving bars, and touch the top
