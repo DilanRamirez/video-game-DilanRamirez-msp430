@@ -39,10 +39,11 @@ make clean
 
 ## How to Play
 To control the blue square, you will use the four buttons as follows:
-  1. S1 -> Move Left
-  2. S2 -> Move Down
-  3. S3 -> Move Up
-  4. S4 -> Move Right
+  S1 -> Move Left
+  S2 -> Move Down
+  S3 -> Move Up
+  S4 -> Move Right
+  
 Remember to avoid touching the moving bars to win the game. Once you lost or
 won, click the reset button to start playing again. The move left and move
 right velocity is faster than the other moves to make it easier.
