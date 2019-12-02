@@ -27,11 +27,32 @@ of the playing field, the player wins. You will know when you win or loose
 beceause a new screen wil show up.
 
 ## Instructions
-To compile the code and start playing, open the shell by M-x shell and type
+To compile the code, load it in theMSP430, and start playing, open the shell by M-x shell and type
 make load.
 ```bash
 make load
 ```
+To delete all the .o files.
+```bash
+make clean
+```
+
+## How to Play
+To control the blue square, you will use the four buttons as follows:
+  1. S1 -> Move Left
+  2. S2 -> Move Down
+  3. S3 -> Move Up
+  4. S4 -> Move Right
+Remember to avoid touching the moving bars to win the game. Once you lost or
+won, click the reset button to start playing again. The move left and move
+right velocity is faster than the other moves to make it easier.
+
+## Improvements
+The game works great. However, there are a few bugs in the game. For example,
+sometimes it does not detect that there is a collision between the bars and
+the blue square. The losing screen and winning screen shows the bars and the
+blue square even if the game stops.  
+
 
 The board has four buttons. These buttons are used to move the little square.
 
@@ -40,14 +61,14 @@ Several libraries are provided.
 They can be installed by the default production of Makefile in the
 repostiory's root directory, or by a "$make install" in each of their subdirs.
 
-    1. TimerLib: Provides code to configure Timer A to generate watchdog timer
-       interrupts at 250 Hz
-    2. p2SwLib: Provides an interrupt-driven driver for the four switches on the LCD
-       board and a demo program illustrating its intended functionality.
-    3. lcdLib: Provides low-level lcd control primitives, defines several fonts, and
-       a simple demo program that uses them.
-    4. shapeLib: Provides an translatable model for shapes that can be translated and
-       rendered as layers.
-    5. circleLib: Provides a circle model as a vector of demi-chord lengths,
-       pre-computed circles as layers with a variety of radii, and a demonstration
-       program that renders a circle.
+  1. TimerLib: Provides code to configure Timer A to generate watchdog timer
+     interrupts at 250 Hz
+  2. p2SwLib: Provides an interrupt-driven driver for the four switches on the LCD
+     board and a demo program illustrating its intended functionality.
+  3. lcdLib: Provides low-level lcd control primitives, defines several fonts, and
+     a simple demo program that uses them.
+  4. shapeLib: Provides an translatable model for shapes that can be translated and
+     rendered as layers.
+  5. circleLib: Provides a circle model as a vector of demi-chord lengths,
+     pre-computed circles as layers with a variety of radii, and a demonstration
+     program that renders a circle.
