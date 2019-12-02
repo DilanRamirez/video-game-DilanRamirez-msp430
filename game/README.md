@@ -22,9 +22,9 @@ The game should meet the following minimum criteria:
 The main idea of this game is to avoid all the moving bars, and touch the top
 of the playing field to win. A player has three lives. Every time the blue
 square touches a bar, the player looses a life. If the player touches tree
-times the moving bars, the player lost. However, if the square touches the top
+times the moving bars, the player loose. However, if the square touches the top
 of the playing field, the player wins. You will know when you win or loose
-beceause a new screen wil show up.
+beceause a new screen will show up.
 
 ## Instructions
 To compile the code, load it in theMSP430, and start playing, open the shell by M-x shell and type
@@ -49,15 +49,6 @@ Remember to avoid touching the moving bars to win the game. Once you lost or
 won, click the reset button to start playing again. The move left and move
 right velocity is faster than the other moves to make it easier.
 
-## Improvements
-The game works great. However, there are a few bugs in the game. For example,
-sometimes it does not detect that there is a collision between the bars and
-the blue square. The losing screen and winning screen shows the bars and the
-blue square even if the game stops.  
-
-
-The board has four buttons. These buttons are used to move the little square.
-
 ## Libraries
 Several libraries are provided.
 They can be installed by the default production of Makefile in the
@@ -74,3 +65,9 @@ repostiory's root directory, or by a "$make install" in each of their subdirs.
   5. circleLib: Provides a circle model as a vector of demi-chord lengths,
      pre-computed circles as layers with a variety of radii, and a demonstration
      program that renders a circle.
+
+## Improvements
+The game works great. However, there are a few bugs in the game. For example,
+sometimes it does not detect that there is a collision between the bars and
+the blue square. The losing screen and winning screen shows the bars and the
+blue square even if the game stops.  
